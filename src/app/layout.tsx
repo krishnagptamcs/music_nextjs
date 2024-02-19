@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // google fonts
 import "./globals.css";
+import Navbar from "@/components/Navbar"; // @ represent the root director that is src replacement of  ../../ in next.js
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <p>Nav Bar items</p>
+        <Navbar />
 
         {children}
       </body>
