@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"; // google fonts
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,11 +12,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode; // it accept the jsx element , that means react formate (due to type script)
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <p>Nav Bar items</p>
+
+        {children}
+      </body>
     </html>
   );
 }
