@@ -1,4 +1,7 @@
+import Contributer from "@/components/Contributer";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import UpcomingWebinar from "@/components/UpcomingWebinar";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TestimonialCards from "@/components/ui/TestimonialCards";
 
@@ -9,6 +12,9 @@ export default function Home() {
         <HeroSection />
         <WhyChooseUs />
         <TestimonialCards />
+        <UpcomingWebinar />
+        <Contributer />
+        <Footer />
       </main>
     </>
   );
